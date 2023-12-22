@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "category": "picture",
+    "title": "Sunset on the Beach",
+    "imageUrl": "https://i.postimg.cc/6qvX7PPQ/Whats-App-Image-2023-12-17-at-7-49-10-PM.jpg"
+  },
+  {
+    "id": 2,
+    "category": "picture",
+    "title": "Mountain Landscape",
+    "imageUrl": "https://example.com/mountain-landscape.jpg"
+  },
+  {
+    "id": 3,
+    "category": "picture",
+    "title": "City Skyline at Night",
+    "imageUrl": "https://i.postimg.cc/6qvX7PPQ/Whats-App-Image-2023-12-17-at-7-49-10-PM.jpg"
+  },
+  {
+    "id": 4,
+    "category": "picture",
+    "title": "Wildlife Safari",
+    "imageUrl": "https://example.com/wildlife-safari.jpg"
+  },
+  {
+    "id": 5,
+    "category": "picture",
+    "title": "Abstract Artwork",
+    "imageUrl": "https://i.postimg.cc/6qvX7PPQ/Whats-App-Image-2023-12-17-at-7-49-10-PM.jpg"
+  },
+  {
+    "id": 6,
+    "category": "picture",
+    "title": "Vintage Car Collection",
+    "imageUrl": "https://example.com/vintage-cars.jpg"
+  },
+  {
+    "id": 7,
+    "category": "picture",
+    "title": "Space Exploration",
+    "imageUrl": "https://i.postimg.cc/6qvX7PPQ/Whats-App-Image-2023-12-17-at-7-49-10-PM.jpg"
+  },
+  {
+    "id": 8,
+    "category": "picture",
+    "title": "Underwater World",
+    "imageUrl": "https://example.com/underwater-world.jpg"
+  },
+  {
+    "id": 9,
+    "category": "picture",
+    "title": "Majestic Waterfall",
+    "imageUrl": "https://i.postimg.cc/6qvX7PPQ/Whats-App-Image-2023-12-17-at-7-49-10-PM.jpg"
+  },
+  {
+    "id": 10,
+    "category": "picture",
+    "title": "Aerial View of City",
+    "imageUrl": "https://example.com/aerial-view-city.jpg"
+  },
+  {
+    "id": 11,
+    "category": "picture",
+    "title": "Floral Garden",
+    "imageUrl": "https://i.postimg.cc/6qvX7PPQ/Whats-App-Image-2023-12-17-at-7-49-10-PM.jpg"
+  },
+  {
+    "id": 12,
+    "category": "picture",
+    "title": "Winter Wonderland",
+    "imageUrl": "https://example.com/winter-wonderland.jpg"
+  },
+  {
+    "id": 13,
+    "category": "picture",
+    "title": "Ancient Architecture",
+    "imageUrl": "https://i.postimg.cc/6qvX7PPQ/Whats-App-Image-2023-12-17-at-7-49-10-PM.jpg"
+  }
+]

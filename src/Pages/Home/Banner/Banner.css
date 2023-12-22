@@ -1,0 +1,11 @@
+.slider-container {
+  position: relative;
+}
+.slider-container:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
+}
+.slick-next {
+  right: 0px;
+  display: hidden;
+}
