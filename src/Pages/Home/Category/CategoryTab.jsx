@@ -1,17 +1,20 @@
 import { Tabs, TabList, Tab, PanelList, Panel } from "react-tabtab";
-import Image from "./Image/Image";
 import Vector from "./Vector/Vector";
+import Photos from "./Photos/Photos";
 const CategoryTab = () => {
   return (
-    <div className="justify-items-center">
+    <div className="">
       <Tabs>
-        <TabList>
-          <Tab>Image</Tab>
+        <TabList className="justify-center">
+          <Tab>Photos</Tab>
           <Tab>Vector</Tab>
+          <Tab>Patterns</Tab>
+          <Tab>Illustration</Tab>
+          <Tab>PSD</Tab>
         </TabList>
         <PanelList>
           <Panel>
-            <Image></Image>
+            <Photos></Photos>
           </Panel>
           <Panel>
             <Vector></Vector>

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-const Image = () => {
+const Photos = () => {
   const [categoryImg, setCategoryImg] = useState([]);
   useEffect(() => {
     fetch("category.json")
@@ -51,8 +51,9 @@ const Image = () => {
           </div>
         </div>
       </div> */}
+      <button className="btn btn-primary">View more</button>
     </div>
   );
 };
 
-export default Image;
+export default Photos;
