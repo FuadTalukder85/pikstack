@@ -2,9 +2,9 @@ import blogImg from "../../../image/blogImg/blogImg.png";
 import "./BlogContainer.css";
 const BlogContainer = () => {
   return (
-    <div className="blog-img w-full bg-fixed text-white">
-      <div className="w-[70%] mx-auto shadow-xl ps-28 pe-28 mt-11 mb-11 p-10 flex justify-center items-center gap-32">
-        <div className="">
+    <div className="blog-img w-full text-white">
+      <div className="w-[70%] h-72 mx-auto mt-11 mb-11 flex justify-center items-center gap-11">
+        <div className="mt-52">
           <h2 className="card-title text-3xl mb-6">
             Royalty-free stock images, photos, vectors and videos
           </h2>
@@ -15,7 +15,7 @@ const BlogContainer = () => {
             here at 123RF. Everything you need is just a search away.
           </p>
         </div>
-        <div className="">
+        <div className="mt-52">
           <img src={blogImg} alt="Album" />
         </div>
       </div>

@@ -1,15 +1,15 @@
 import logo from "../../../../image/logo/pikstack-logo.png";
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar bg-[#F5F5DC] justify-between ps-28 pe-28">
+    <div className="bg-[#C0F1FF]">
+      <div className="navbar  justify-between ps-28 pe-28">
         {/*  */}
         <div className="flex-none w-40">
           <img src={logo} alt="" />
         </div>
         {/*  */}
         <div>
-          <ul className="flex gap-5">
+          <ul className="flex gap-11 font-semibold">
             <li>Photos</li>
             <li>Vector</li>
             <li>Patterns</li>
@@ -19,6 +19,12 @@ const Navbar = () => {
         </div>
         {/*  */}
         <div className="flex-none">
+          <div>
+            <ul className="flex gap-11 font-semibold pr-6">
+              <li>Contributor</li>
+              <li>Login</li>
+            </ul>
+          </div>
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -92,11 +98,11 @@ const Navbar = () => {
         </div>
       </div>
       {/* search */}
-      <div className="form-control flex items-center bg-[#F5F5DC] z-10 lg:w-full">
+      <div className="form-control flex items-center z-10 lg:w-full pb-5">
         <input
           type="text"
           placeholder="Find your Images. Search by keywords..."
-          className="input lg:w-full md:w-auto bg-[#dfdfd2] ps-28 pe-28"
+          className="input border lg:w-full md:w-auto bg-white ps-28 pe-28"
         />
       </div>
     </div>

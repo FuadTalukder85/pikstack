@@ -1,3 +1,4 @@
 .blog-img {
-  background: url(../../../image/blogImg/blogBanner.png);
+  background: url(../../../image/blogImg/blogBanner.png) no-repeat;
+  height: 500px;
 }

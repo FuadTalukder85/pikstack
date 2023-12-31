@@ -17,7 +17,7 @@ const ImageGallery = () => {
   //     "https://picsum.photos/200/300?image=1050",
   //   ];
   return (
-    <div>
+    <div className="mt-28">
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 5 }}>
         <Masonry columnsCount={3} gutter="10px">
           {galleryImg.map((image, i) => (

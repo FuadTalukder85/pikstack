@@ -1,9 +1,10 @@
-import bannerImg from "../../../image/banner_img/pikstack-logo.png";
+import bannerImg01 from "../../../image/banner_img/banner-img01.jpg";
+import bannerImg02 from "../../../image/banner_img/banner-img02.jpg";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../Banner/Banner.css";
+// import "../Banner/Banner.css";
 
 const Banner = () => {
   var settings = {
@@ -16,14 +17,25 @@ const Banner = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="slider-container pt-24 pb-24">
+    <div className="slider-container bg-[#ffffff]">
       <Slider {...settings}>
         <div>
           <h3>
-            <img src={bannerImg} className="mx-auto" alt="" />
+            <img src={bannerImg01} className="mx-auto" alt="" />
+            <h5>Banner img</h5>
           </h3>
         </div>
         <div>
+          <h3>
+            <img src={bannerImg02} className="mx-auto" alt="" />
+          </h3>
+        </div>
+        <div>
+          <h3>
+            <img src={bannerImg01} className="mx-auto" alt="" />
+          </h3>
+        </div>
+        {/* <div>
           <h3>
             <img src={bannerImg} className="mx-auto" alt="" />
           </h3>
@@ -37,17 +49,7 @@ const Banner = () => {
           <h3>
             <img src={bannerImg} className="mx-auto" alt="" />
           </h3>
-        </div>
-        <div>
-          <h3>
-            <img src={bannerImg} className="mx-auto" alt="" />
-          </h3>
-        </div>
-        <div>
-          <h3>
-            <img src={bannerImg} className="mx-auto" alt="" />
-          </h3>
-        </div>
+        </div> */}
       </Slider>
     </div>
   );
