@@ -1,11 +1,13 @@
 import Banner from "../Banner/Banner";
-import CategoryTab from "../Category/CategoryTab";
+import Category from "../Category/Category";
+import ImageGallery from "../ImageGallery/ImageGallery";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <CategoryTab></CategoryTab>
+      <Category></Category>
+      <ImageGallery></ImageGallery>
     </div>
   );
 };
