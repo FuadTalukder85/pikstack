@@ -92,11 +92,11 @@ const Navbar = () => {
         </div>
       </div>
       {/* search */}
-      <div className="form-control flex items-center bg-[#F5F5DC] fixed z-10 lg:w-full">
+      <div className="form-control flex items-center bg-[#F5F5DC] z-10 lg:w-full">
         <input
           type="text"
           placeholder="Find your Images. Search by keywords..."
-          className="input input-bordered lg:w-full md:w-auto bg-white ps-28 pe-28"
+          className="input lg:w-full md:w-auto bg-[#dfdfd2] ps-28 pe-28"
         />
       </div>
     </div>
