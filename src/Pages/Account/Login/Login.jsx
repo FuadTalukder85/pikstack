@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   return (
     <div>
+      <Helmet>
+        <title>Pikstack || Login</title>
+      </Helmet>
+      ;
       <div className="hero bg-base-200">
         <div className="hero-content w-full flex-col ">
           <div className="text-center lg:text-left">
@@ -48,19 +53,16 @@ const Login = () => {
                       </a>
                     </div>
                     <div>
-                      <a
-                        href="#"
-                        className="label-text-alt link link-hover text-[15px] text-[#F1696A]"
-                      >
-                        Dont have an account?
-                        <a href="" className="ps-3 ">
+                      <p className="label-text-alt text-[15px] text-[#F1696A]">
+                        <span>Dont have an account?</span>
+                        <a href="" className="ps-3 link">
                           <Link to="/signup">Create Account</Link>
                         </a>
-                        <p className="mt-1">Or Sign Up with</p>
-                        <div className="flex flex-col items-center mt-5 text-2xl">
+                        <p className="mt-2">Or Sign Up with</p>
+                        <div className="flex flex-col items-center mt-5 text-2xl link">
                           <FaGoogle />
                         </div>
-                      </a>
+                      </p>
                     </div>
                   </div>
                 </label>

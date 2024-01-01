@@ -14,6 +14,17 @@ const Signup = () => {
             <form className="card-body  ">
               <div className="form-control">
                 <label className="label">
+                  <span className="label-text">Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="name"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input
@@ -41,10 +52,10 @@ const Signup = () => {
                     <div>
                       <a
                         href="#"
-                        className="label-text-alt link link-hover text-[15px] text-[#F1696A]"
+                        className="label-text-alt text-[15px] text-[#F1696A]"
                       >
                         Have an account?
-                        <a href="" className="ps-3 ">
+                        <a href="" className="ps-3 link">
                           <Link to="/login">Login</Link>
                         </a>
                       </a>
