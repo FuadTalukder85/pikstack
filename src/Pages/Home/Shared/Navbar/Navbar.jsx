@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import logo from "../../../../image/logo/pikstack-logo.png";
+import { IoSearch } from "react-icons/io5";
 const Navbar = () => {
   return (
-    <div className="bg-[#C0F1FF]">
+    <div className="bg-[#271f23] text-white">
       <div className="navbar  justify-between ps-28 pe-28">
         {/*  */}
         <div className="flex-none w-40">
@@ -10,6 +12,9 @@ const Navbar = () => {
         {/*  */}
         <div>
           <ul className="flex gap-11 font-semibold">
+            <li>
+              <Link to="/home">Home</Link>
+            </li>
             <li>Photos</li>
             <li>Vector</li>
             <li>Patterns</li>
@@ -22,7 +27,9 @@ const Navbar = () => {
           <div>
             <ul className="flex gap-11 font-semibold pr-6">
               <li>Contributor</li>
-              <li>Login</li>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
             </ul>
           </div>
           <div className="dropdown dropdown-end">
@@ -102,8 +109,11 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Find your Images. Search by keywords..."
-          className="input border lg:w-full md:w-auto bg-white ps-28 pe-28"
+          className="input border lg:w-full md:w-auto bg-white text-black ps-28 pe-28"
         />
+        <button className="absolute right-0  me-28 p-3 ps-7 pr-7 text-2xl bg-[#EE4023]">
+          <IoSearch />
+        </button>
       </div>
     </div>
   );

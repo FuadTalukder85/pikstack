@@ -1,4 +1,4 @@
-.slider-container {
+/* .slider-container {
   position: relative;
 }
 .slider-container:hover {
@@ -8,4 +8,11 @@
 .slick-next {
   right: 0px;
   display: hidden;
+} */
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 25px;
 }

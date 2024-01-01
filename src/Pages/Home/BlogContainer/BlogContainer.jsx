@@ -12,7 +12,7 @@ const BlogContainer = () => {
             Discover the best royalty-free stock images, photos, vectors,
             sequences, videos and music files for your designs and projects,
             made by talented artists and collaborators from around the world,
-            here at 123RF. Everything you need is just a search away.
+            here at Pikstack. Everything you need is just a search away.
           </p>
         </div>
         <div className="mt-52">
