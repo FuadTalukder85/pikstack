@@ -13,7 +13,7 @@ const Navbar = () => {
         <div>
           <ul className="flex gap-11 font-semibold">
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>Photos</li>
             <li>Vector</li>
