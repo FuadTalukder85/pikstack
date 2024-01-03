@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div>
       <Helmet>
-        <title>Pikstack || Login</title>
+        <title>Pikstack || Loginnn</title>
       </Helmet>
       ;
       <div className="hero bg-base-200">
