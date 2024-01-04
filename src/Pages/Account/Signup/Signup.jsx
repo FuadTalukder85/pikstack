@@ -1,21 +1,41 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 const Signup = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUserProfile, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     console.log(data);
     createUser(data.email, data.password).then((result) => {
       const loggedUser = result.user;
       console.log(loggedUser);
+      updateUserProfile(data.name, data.photoURL)
+        .then(() => {
+          console.log("User profile updated");
+          reset();
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "User created successfully",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          logOut()
+            .then()
+            .catch((error) => console.log(error));
+          navigate("/login");
+        })
+        .catch((error) => console.log(error));
     });
   };
 
@@ -43,6 +63,22 @@ const Signup = () => {
                 {errors.name?.type === "required" && (
                   <p role="alert" className="mt-1 text-[#F1696A]">
                     Name is required
+                  </p>
+                )}
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Photo URL</span>
+                </label>
+                <input
+                  type="text"
+                  {...register("photoURL", { required: true })}
+                  placeholder="photoURL"
+                  className="input input-bordered"
+                />
+                {errors.photoURL?.type === "required" && (
+                  <p role="alert" className="mt-1 text-[#F1696A]">
+                    photoURL is required
                   </p>
                 )}
               </div>

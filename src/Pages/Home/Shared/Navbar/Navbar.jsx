@@ -28,6 +28,9 @@ const Navbar = () => {
             <li>Patterns</li>
             <li>Illustration</li>
             <li>PSD</li>
+            <li>
+              <Link to="/checkRoute">checkRoute</Link>
+            </li>
           </ul>
         </div>
         {/*  */}
@@ -38,6 +41,7 @@ const Navbar = () => {
               <li>
                 {user ? (
                   <>
+                    <span>{user?.displayName}</span>
                     <button onClick={handleLogOut} className="ps-7">
                       Log out
                     </button>
