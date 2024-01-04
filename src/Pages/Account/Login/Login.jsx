@@ -1,8 +1,44 @@
 import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
+// import { useForm } from "react-hook-form";
+import { useContext } from "react";
+import { AuthContext } from "../../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
+  // const {
+  //   register,
+  //   handleSubmit: handleLogin,
+  //   formState: { errors },
+  // } = useForm();
+
+  // const onSubmit = (data) => {
+  //   console.log(data);
+  //   signIn(data.email, data.password).then((result) => {
+  //     const logInUser = result.user;
+  //     console.log(logInUser);
+  //   });
+  // };
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+    signIn(email, password).then((result) => {
+      const user = result.user;
+      console.log(user);
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Your are log in successfull",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    });
+  };
   return (
     <div>
       <Helmet>
@@ -17,17 +53,21 @@ const Login = () => {
             </h1>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-xl bg-base-100 font-semibold">
-            <form className="card-body  ">
+            <form onSubmit={handleLogin} className="card-body  ">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="email"
                   className="input input-bordered"
-                  required
+                  // {...register("mail", {
+                  //   required: "Email Address is required",
+                  // })}
                 />
+                {/* {errors.email && <p role="alert">{errors.email.message}</p>} */}
               </div>
               <div className="form-control">
                 <label className="label">
@@ -35,6 +75,7 @@ const Login = () => {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required

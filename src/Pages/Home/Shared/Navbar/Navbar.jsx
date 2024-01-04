@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import logo from "../../../../image/logo/pikstack-logo.png";
 import { IoSearch } from "react-icons/io5";
+import { useContext } from "react";
+import { AuthContext } from "../../../../Providers/AuthProvider";
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then()
+      .catch((error) => console.log(error));
+  };
   return (
     <div className="bg-[#271f23] text-white">
       <div className="navbar  justify-between ps-28 pe-28">
@@ -28,7 +36,17 @@ const Navbar = () => {
             <ul className="flex gap-11 font-semibold pr-6">
               <li>Contributor</li>
               <li>
-                <Link to="/login">Login</Link>
+                {user ? (
+                  <>
+                    <button onClick={handleLogOut} className="ps-7">
+                      Log out
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <Link to="/login">Login</Link>
+                  </>
+                )}
               </li>
             </ul>
           </div>
@@ -84,7 +102,7 @@ const Navbar = () => {
                 />
               </div>
             </div>
-            <ul
+            {/* <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
@@ -100,7 +118,7 @@ const Navbar = () => {
               <li>
                 <a>Logout</a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
