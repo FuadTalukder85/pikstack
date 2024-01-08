@@ -7,15 +7,17 @@ const Category = () => {
       .then((data) => setAllCategory(data));
   }, []);
   return (
-    <div className="grid grid-cols-5 justify-items-center gap-10 mt-11 mb-28 bg-white ps-28 pe-28">
+    <div className="grid grid-cols-5 justify-items-center gap-10 mt-11 mb-28 ps-28 pe-28">
       {allcategory.map((category) => (
-        <div className="card w-76 bg-base-100 shadow-xl" key={category.id}>
+        <div className="card w-76 bg-[#271F23] shadow-xl" key={category.id}>
           <figure>
             <img src={category.imageUrl} alt="Shoes" />
           </figure>
           <div className="p-3">
-            <div className="card-actions justify-start">
-              <h3 className="text-2xl font-bold">{category.category}</h3>
+            <div className="card-actions justify-start text-white">
+              <h3 className="text-2xl font-bold text-white">
+                {category.category}
+              </h3>
               <h5>{category.title}</h5>
             </div>
           </div>
