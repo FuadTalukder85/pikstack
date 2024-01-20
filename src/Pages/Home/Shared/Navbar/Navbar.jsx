@@ -39,6 +39,9 @@ const Navbar = () => {
             <ul className="flex gap-11 font-semibold pr-6">
               <li>Contributor</li>
               <li>
+                <Link to="/dashboard/admin">Dashboard</Link>
+              </li>
+              <li>
                 {user ? (
                   <>
                     <span>{user?.displayName}</span>
