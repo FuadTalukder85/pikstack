@@ -62,6 +62,11 @@ const Dashboard = () => {
                 <FaUsersGear></FaUsersGear>Manage Users
               </Link>
             </li>
+            <li>
+              <Link to="updateitem">
+                <FaUsersGear></FaUsersGear>updateitem
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
