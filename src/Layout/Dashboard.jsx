@@ -1,7 +1,10 @@
 import { Outlet } from "react-router-dom";
 import logo from "../image/logo/pikstack-logo.png";
 import { FaHome } from "react-icons/fa";
-import { IoIosAddCircle } from "react-icons/io";
+import { BiSolidCartAdd } from "react-icons/bi";
+import { HiTemplate } from "react-icons/hi";
+import { FaUsersGear } from "react-icons/fa6";
+import { TbLockAccessOff } from "react-icons/tb";
 const Dashboard = () => {
   return (
     <div className="ps-28 pe-28">
@@ -40,18 +43,24 @@ const Dashboard = () => {
               </a>
             </li>
             <li>
-              <a>Dashboard Access</a>
-            </li>
-            <li>
               <a>
-                <IoIosAddCircle></IoIosAddCircle>Add an item
+                <TbLockAccessOff></TbLockAccessOff>Dashboard Access
               </a>
             </li>
             <li>
-              <a>Manage Items</a>
+              <a>
+                <BiSolidCartAdd></BiSolidCartAdd>Add an item
+              </a>
             </li>
             <li>
-              <a>Manage Users</a>
+              <a>
+                <HiTemplate></HiTemplate>Manage Items
+              </a>
+            </li>
+            <li>
+              <a>
+                <FaUsersGear></FaUsersGear>Manage Users
+              </a>
             </li>
           </ul>
         </div>

@@ -37,7 +37,7 @@ const Banner = () => {
     nextArrow: <NextBtn />,
   };
   return (
-    <div className="slider-container bg-[#ffffff]">
+    <div className="w-[100%] slider-container bg-[#ffffff]">
       <Slider {...settings}>
         <div>
           <h3 className="relative">
