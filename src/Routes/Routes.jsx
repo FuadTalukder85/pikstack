@@ -7,6 +7,9 @@ import PrivateRoute from "./PrivateRoute";
 import RouteCheck from "../Pages/RouteCheck/RouteCheck";
 import Dashboard from "../Layout/Dashboard";
 import AdminHome from "../Pages/Dashboard/AdminDashboard/AdminHome";
+import AddItem from "../Pages/Dashboard/AddItem/AddItem";
+import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
+import ManageUsers from "../Pages/Dashboard/ManageUsers/ManageUsers";
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +46,18 @@ export const router = createBrowserRouter([
       {
         path: "admin",
         element: <AdminHome></AdminHome>,
+      },
+      {
+        path: "additem",
+        element: <AddItem></AddItem>,
+      },
+      {
+        path: "manageitems",
+        element: <ManageItems></ManageItems>,
+      },
+      {
+        path: "manageusers",
+        element: <ManageUsers></ManageUsers>,
       },
     ],
   },

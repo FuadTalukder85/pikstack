@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import logo from "../image/logo/pikstack-logo.png";
 import { FaHome } from "react-icons/fa";
 import { BiSolidCartAdd } from "react-icons/bi";
@@ -37,10 +37,10 @@ const Dashboard = () => {
               <a className="text-3xl">Dashboard</a>
             </li>
             <li>
-              <a>
+              <Link to="admin">
                 <FaHome className=""></FaHome>
                 Admin Home
-              </a>
+              </Link>
             </li>
             <li>
               <a>
@@ -48,19 +48,19 @@ const Dashboard = () => {
               </a>
             </li>
             <li>
-              <a>
+              <Link to="additem">
                 <BiSolidCartAdd></BiSolidCartAdd>Add an item
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="manageitems">
                 <HiTemplate></HiTemplate>Manage Items
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="manageusers">
                 <FaUsersGear></FaUsersGear>Manage Users
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
