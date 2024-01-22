@@ -27,9 +27,11 @@ const Dashboard = () => {
             className="drawer-overlay"
           ></label>
           <ul className="menu p-4 min-h-full bg-[#271F23] text-white font-semibold">
-            <li>
-              <img className="w-60" src={logo} alt="" />
-            </li>
+            <Link to="/">
+              <li>
+                <img className="w-60" src={logo} alt="" />
+              </li>
+            </Link>
             <li className="bg-[#EE4023]"></li>
 
             {/* Sidebar content here */}
@@ -62,11 +64,11 @@ const Dashboard = () => {
                 <FaUsersGear></FaUsersGear>Manage Users
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="updateitem">
                 <FaUsersGear></FaUsersGear>updateitem
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

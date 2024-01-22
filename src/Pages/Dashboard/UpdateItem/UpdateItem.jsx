@@ -4,7 +4,7 @@ const UpdateItem = () => {
       <div className="hero-content flex-col">
         <div className="text-center lg:text-center">
           <h1 className="text-4xl font-bold text-[#EE4023] pb-11">
-            Add an item
+            Update item
           </h1>
         </div>
         <div className="card shrink-0 w-full shadow-xl border border-[#EE4023] rounded-lg">
@@ -56,9 +56,9 @@ const UpdateItem = () => {
             <div>
               <input type="file" className="text-[#EE4023] font-bold pt-7" />
             </div>
-            <div className="form-control w-28 mt-6">
-              <button className="bg-[#EE4023] text-white tracking-widest font-bold py-3 px-7 rounded-lg">
-                Upload
+            <div className="form-control w-24 mt-6">
+              <button className="bg-[#EE4023] text-white tracking-widest font-bold rounded py-1">
+                Update
               </button>
             </div>
           </form>

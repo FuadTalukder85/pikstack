@@ -47,7 +47,7 @@ const ManageItems = () => {
             <th className="text-center">
               {/* update */}
               <button className=" text-[#EE4023] text-4xl">
-                <Link to="/updateitem">
+                <Link to="updateitem">
                   <FaRegEdit></FaRegEdit>
                 </Link>
               </button>
