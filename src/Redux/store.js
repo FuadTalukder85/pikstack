@@ -12,6 +12,7 @@ import {
 
 export const store = configureStore({
   reducer: {
+    [baseApi.reducerPath]: baseApi.reducer,
     assets: assetsReducer,
   },
   middleware: (getDefaultMiddlewares) =>

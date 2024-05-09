@@ -12,7 +12,7 @@ const Navbar = () => {
   };
   return (
     <div className="bg-[#271f23] text-white">
-      <div className="navbar  justify-between ps-28 pe-28">
+      <div className="navbar justify-between ps-28 pe-28">
         {/*  */}
         <div className="flex-none w-40">
           <img src={logo} alt="" />

@@ -11,4 +11,4 @@ const assetsSlice = createSlice({
 });
 
 export const { reducer: assetsReducer } = assetsSlice;
-// export const { actions } = assetsSlice;
+export const { actions } = assetsSlice;
