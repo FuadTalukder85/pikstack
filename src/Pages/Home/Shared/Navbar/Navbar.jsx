@@ -25,7 +25,9 @@ const Navbar = () => {
             </li>
             <li>Photos</li>
             <li>Vector</li>
-            <li>Patterns</li>
+            <li>
+              <Link to="/pattern">Pattern</Link>
+            </li>
             <li>Illustration</li>
             <li>PSD</li>
             <li>

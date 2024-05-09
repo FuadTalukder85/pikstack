@@ -11,6 +11,7 @@ import AddItem from "../Pages/Dashboard/AddItem/AddItem";
 import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
 import ManageUsers from "../Pages/Dashboard/ManageUsers/ManageUsers";
 import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
+import Pattern from "../Component/Card/Pattern/Pattern";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup></Signup>,
+      },
+      {
+        path: "/pattern",
+        element: <Pattern></Pattern>,
       },
       {
         path: "/checkRoute",
