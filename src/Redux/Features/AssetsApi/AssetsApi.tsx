@@ -8,6 +8,12 @@ const assetsApi = baseApi.injectEndpoints({
         method: "GET",
       }),
     }),
+    getAssetsById: builder.query({
+      query: (_id) => ({
+        url: `/assets/${_id}`,
+        method: "GET",
+      }),
+    }),
   }),
 });
-export const { useGetAssetsQuery } = assetsApi;
+export const { useGetAssetsQuery, useGetAssetsByIdQuery } = assetsApi;

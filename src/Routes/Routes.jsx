@@ -12,6 +12,7 @@ import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
 import ManageUsers from "../Pages/Dashboard/ManageUsers/ManageUsers";
 import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
 import Pattern from "../Component/Card/Pattern/Pattern";
+import AssetsDetails from "../Pages/AssetsDetails/AssetsDetails";
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
       {
         path: "/pattern",
         element: <Pattern></Pattern>,
+      },
+      {
+        path: "assets/:id",
+        element: <AssetsDetails></AssetsDetails>,
       },
       {
         path: "/checkRoute",
