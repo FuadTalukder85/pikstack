@@ -1,7 +1,8 @@
 import Banner from "../Banner/Banner";
 import BlogContainer from "../BlogContainer/BlogContainer";
 import Category from "../Category/Category";
-import ImageGallery from "../ImageGallery/ImageGallery";
+import Popular from "../Popular/Popular";
+// import ImageGallery from "../ImageGallery/ImageGallery";
 
 const Home = () => {
   return (
@@ -9,7 +10,8 @@ const Home = () => {
       <Banner></Banner>
       <Category></Category>
       <BlogContainer></BlogContainer>
-      <ImageGallery></ImageGallery>
+      <Popular></Popular>
+      {/* <ImageGallery></ImageGallery> */}
     </div>
   );
 };

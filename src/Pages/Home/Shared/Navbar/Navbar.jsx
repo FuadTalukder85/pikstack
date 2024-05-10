@@ -24,12 +24,16 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>Photos</li>
-            <li>Vector</li>
+            <li>
+              <Link to="/vector">Vector</Link>
+            </li>
             <li>
               <Link to="/pattern">Pattern</Link>
             </li>
             <li>Illustration</li>
-            <li>PSD</li>
+            <li>
+              <Link to="/psd">PSD</Link>
+            </li>
             <li>
               <Link to="/checkRoute">checkRoute</Link>
             </li>
