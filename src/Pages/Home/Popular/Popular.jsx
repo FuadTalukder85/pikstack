@@ -10,7 +10,7 @@ import img9 from "../../../assets/img/popularImg/vector09.jpg";
 const Popular = () => {
   return (
     <div className="flex justify-center">
-      <div className="mt-28 mx-28">
+      <div className="mt-16 mx-28">
         <h1 className="text-4xl font-bold text-center text-[#271F23] mt-16">
           Popular Vector Graphics and Photos
         </h1>

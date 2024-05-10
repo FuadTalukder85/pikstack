@@ -41,24 +41,27 @@ const Signup = () => {
 
   return (
     <div>
-      <div className="hero bg-base-200">
+      <div className="hero">
         <div className="hero-content w-full flex-col ">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold text-center text-[#F1696A]">
+            {/* <h1 className="text-5xl font-bold text-center text-[#F1696A]">
               Signup Pikstack...
-            </h1>
+            </h1> */}
           </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-xl bg-base-100 font-semibold">
-            <form onSubmit={handleSubmit(onSubmit)} className="card-body  ">
+          <div className="card shrink-0 bg-white shadow-xl font-semibold">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="card-body w-[550px]"
+            >
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Name</span>
+                  <span className="label-text text-[#271F23]">Name</span>
                 </label>
                 <input
                   type="text"
                   {...register("name", { required: true })}
                   placeholder="name"
-                  className="input input-bordered"
+                  className="input input-bordered w-full"
                 />
                 {errors.name?.type === "required" && (
                   <p role="alert" className="mt-1 text-[#F1696A]">
@@ -68,7 +71,7 @@ const Signup = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Photo URL</span>
+                  <span className="label-text text-[#271F23]">Photo URL</span>
                 </label>
                 <input
                   type="text"
@@ -84,7 +87,7 @@ const Signup = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-[#271F23]">Email</span>
                 </label>
                 <input
                   type="email"
@@ -100,7 +103,7 @@ const Signup = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-[#271F23]">Password</span>
                 </label>
                 <input
                   type="text"
@@ -139,7 +142,7 @@ const Signup = () => {
                   <input
                     type="submit"
                     value="Sign Up"
-                    className="btn bg-[#F1696A]"
+                    className="btn bg-[#F1696A] text-white border-none"
                   />
                   {/* <button className="btn bg-[#F1696A]">Sign Up</button> */}
                 </div>

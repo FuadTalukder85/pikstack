@@ -2,6 +2,7 @@ import Banner from "../Banner/Banner";
 import BlogContainer from "../BlogContainer/BlogContainer";
 import Category from "../Category/Category";
 import Popular from "../Popular/Popular";
+import SignUpBanner from "../SignUpBanner/SignUpBanner";
 // import ImageGallery from "../ImageGallery/ImageGallery";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <BlogContainer></BlogContainer>
       <Popular></Popular>
       {/* <ImageGallery></ImageGallery> */}
+      <SignUpBanner></SignUpBanner>
     </div>
   );
 };

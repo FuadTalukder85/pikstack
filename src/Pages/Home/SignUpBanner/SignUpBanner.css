@@ -1,0 +1,5 @@
+.bg-img {
+  background-image: url(../../../assets/img/bannerImg/banner01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
