@@ -4,7 +4,7 @@ const AdminHome = () => {
   return (
     <div className="px-11">
       <div>
-        <div className="flex items-center justify-between text-3xl font-semibold">
+        <div className="md:flex items-center justify-between text-3xl font-semibold">
           <h1 className="text-[#271F23]">
             Welcome back <span className="text-[#EE4023] font-bold">Fuad</span>
           </h1>
@@ -18,9 +18,9 @@ const AdminHome = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between px-16 w-[1100px]">
+        <div className="md:flex justify-between px-16 w-[1100px]">
           {/* Category */}
-          <div className="grid grid-cols-2 gap-2">
+          <div className="md:grid grid-cols-2 gap-2">
             <div className="flex items-center gap-3">
               <MdProductionQuantityLimits className="text-[#EE4023] text-4xl"></MdProductionQuantityLimits>
               <div className="text-center">
@@ -60,7 +60,7 @@ const AdminHome = () => {
             </div>
           </div>
           {/*  */}
-          <div className="grid grid-cols-2 gap-2">
+          <div className="md:grid grid-cols-2 gap-2">
             <div className="flex items-center gap-3">
               <MdProductionQuantityLimits className="text-[#EE4023] text-4xl"></MdProductionQuantityLimits>
               <div className="text-center">
@@ -88,7 +88,7 @@ const AdminHome = () => {
               <MdProductionQuantityLimits className="text-[#EE4023] text-4xl"></MdProductionQuantityLimits>
               <div className="text-center">
                 <h3 className="text-[#271F23] font-semibold">Total User</h3>
-                <h3 className="text-[#271F23] text-3xl font-semibold">571</h3>
+                <h3 className="text-[#271F23] text-3xl font-semibold">000</h3>
               </div>
             </div>
           </div>
