@@ -21,10 +21,18 @@ const assetsApi = baseApi.injectEndpoints({
         method: "GET",
       }),
     }),
+    updateAssets: builder.mutation({
+      query: ({ _id, assetsData }) => ({
+        url: `/assets/${_id}`,
+        method: "PUT",
+        body: assetsData,
+      }),
+    }),
   }),
 });
 export const {
   usePostAssetsMutation,
   useGetAssetsQuery,
   useGetAssetsByIdQuery,
+  useUpdateAssetsMutation,
 } = assetsApi;
