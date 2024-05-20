@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaDownload } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
-// import "./PatternCard.css";
 
 const PatternCard = ({ pattern }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -39,6 +38,9 @@ const PatternCard = ({ pattern }) => {
                 <div className="flex flex-col items-center lg:items-start">
                   <p className="text-2xl font-semibold text-[#271F23] mb-4">
                     {pattern.title}
+                  </p>
+                  <p className="font-semibold text-[#271F23]">
+                    {pattern.description}
                   </p>
                   <a href={pattern.image} download="image.jpg">
                     <button className="mt-5 flex gap-3 items-center bg-[#EE4023] hover:bg-[#d14343] transition-all text-white font-semibold text-lg tracking-wider rounded-md px-16 py-3">
