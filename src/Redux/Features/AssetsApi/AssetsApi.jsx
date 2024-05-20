@@ -17,7 +17,7 @@ const assetsApi = baseApi.injectEndpoints({
     }),
     getAssetsById: builder.query({
       query: (_id) => ({
-        url: `/assets/${_id}`,
+        url: `/pattern/${_id}`,
         method: "GET",
       }),
     }),
