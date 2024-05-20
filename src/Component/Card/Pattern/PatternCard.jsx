@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { FaDownload } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
+// import "./PatternCard.css";
 
 const PatternCard = ({ pattern }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -16,27 +18,48 @@ const PatternCard = ({ pattern }) => {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <button onClick={() => handleOpenModal(pattern.image)}>
         <img src={pattern.image} alt="Pattern Thumbnail" />
       </button>
       {isModalOpen && (
-        <dialog open className="modal">
-          <div className="modal-box">
+        <dialog
+          id="my_modal_2"
+          open
+          className="modal fixed inset-0 z-50 flex items-center justify-center"
+        >
+          <div className="modal-box max-w-screen-lg w-full bg-white p-10 relative">
             {selectedImage && (
-              <Link to={`/assets/${pattern._id}`}>
-                <img src={selectedImage} alt="Pattern" />
-              </Link>
+              <div className="flex flex-col lg:flex-row gap-16 items-center mx-auto mt-10">
+                <img
+                  className="w-full lg:w-1/2"
+                  src={selectedImage}
+                  alt="Pattern"
+                />
+                <div className="flex flex-col items-center lg:items-start">
+                  <p className="text-2xl font-semibold text-[#271F23] mb-4">
+                    {pattern.title}
+                  </p>
+                  <a href={pattern.image} download="image.jpg">
+                    <button className="mt-5 flex gap-3 items-center bg-[#EE4023] hover:bg-[#d14343] transition-all text-white font-semibold text-lg tracking-wider rounded-md px-16 py-3">
+                      Download <FaDownload />
+                    </button>
+                  </a>
+                </div>
+              </div>
             )}
-            <p>{pattern.title}</p>
+            <button
+              type="button"
+              className="absolute top-5 right-5 text-lg"
+              onClick={handleCloseModal}
+            >
+              <IoClose />
+            </button>
           </div>
-          <form
-            method="dialog"
-            className="modal-backdrop"
+          <div
+            className="modal-backdrop fixed inset-0 bg-black opacity-50"
             onClick={handleCloseModal}
-          >
-            <button type="button">Close</button>
-          </form>
+          ></div>
         </dialog>
       )}
     </div>

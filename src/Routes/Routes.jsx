@@ -12,7 +12,7 @@ import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
 import ManageUsers from "../Pages/Dashboard/ManageUsers/ManageUsers";
 import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
 import Pattern from "../Component/Card/Pattern/Pattern";
-// import AssetsDetails from "../Pages/AssetsDetails/AssetsDetails";
+import AssetsDetails from "../Pages/AssetsDetails/AssetsDetails";
 import Vector from "../Component/Card/Vector/Vector";
 import Psd from "../Component/Card/Psd/Psd";
 
@@ -41,18 +41,18 @@ export const router = createBrowserRouter([
         path: "/pattern",
         element: <Pattern></Pattern>,
       },
-      {
-        path: "/pattern/:id",
-        element: <Pattern></Pattern>,
-      },
+      // {
+      //   path: "/pattern/:id",
+      //   element: <Pattern></Pattern>,
+      // },
       {
         path: "/psd",
         element: <Psd></Psd>,
       },
-      // {
-      //   path: "assets/:id",
-      //   element: <AssetsDetails></AssetsDetails>,
-      // },
+      {
+        path: "assets/:id",
+        element: <AssetsDetails></AssetsDetails>,
+      },
       {
         path: "/checkRoute",
         element: (
