@@ -1,9 +1,9 @@
 import logo from "../../../../image/logo/pikstack-logo.png";
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer p-10 bg-[#271F23] text-white font-semibold justify-items-center">
-        <nav className="w-40 flex items-center justify-center">
+    <div className="bg-[#271F23] text-white font-semibold px-28">
+      <footer className="footer py-10">
+        <nav className="w-40 flex items-center justify-between">
           <img src={logo} alt="" />
         </nav>
         <nav>
@@ -45,6 +45,10 @@ const Footer = () => {
           </fieldset>
         </form>
       </footer>
+      <hr className="mt-10" />
+      <div className="py-16 text-center">
+        Copyright © 2024 Pikstack Company All rights reserved.
+      </div>
     </div>
   );
 };
