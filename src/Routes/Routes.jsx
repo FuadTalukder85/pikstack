@@ -14,6 +14,7 @@ import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
 import Pattern from "../Component/Card/Pattern/Pattern";
 import Vector from "../Component/Card/Vector/Vector";
 import Psd from "../Component/Card/Psd/Psd";
+import Photos from "../Component/Card/Photos/Photos";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup></Signup>,
+      },
+      {
+        path: "/photos",
+        element: <Photos></Photos>,
       },
       {
         path: "/vector",
