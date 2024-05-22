@@ -10,8 +10,8 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <Category></Category>
-      <BlogContainer></BlogContainer>
       <Popular></Popular>
+      <BlogContainer></BlogContainer>
       {/* <ImageGallery></ImageGallery> */}
       <SignUpBanner></SignUpBanner>
     </div>

@@ -3,7 +3,7 @@ import "./BlogContainer.css";
 const BlogContainer = () => {
   return (
     <div className="blog-img w-full text-white">
-      <div className="w-[70%] h-72 mx-auto mt-11 mb-11 flex justify-center items-center gap-11">
+      <div className="w-[70%] h-72 mx-auto mt-28 mb-11 flex justify-center items-center gap-11">
         <div className="mt-52">
           <h2 className="card-title text-3xl mb-6">
             Pikstack-free stock images, photos, vectors and videos
