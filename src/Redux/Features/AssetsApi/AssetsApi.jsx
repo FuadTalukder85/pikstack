@@ -28,6 +28,12 @@ const assetsApi = baseApi.injectEndpoints({
         body: assetsData,
       }),
     }),
+    deleteAssets: builder.mutation({
+      query: (_id) => ({
+        url: `/assets/${_id}`,
+        method: "DELETE",
+      }),
+    }),
   }),
 });
 export const {
@@ -35,4 +41,5 @@ export const {
   useGetAssetsQuery,
   useGetAssetsByIdQuery,
   useUpdateAssetsMutation,
+  useDeleteAssetsMutation,
 } = assetsApi;

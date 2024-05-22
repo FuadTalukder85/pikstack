@@ -2,10 +2,42 @@ import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteSweep } from "react-icons/md";
 import img from "../../../image/blogImg/blogImg.png";
 import { Link } from "react-router-dom";
-import { useGetAssetsQuery } from "../../../Redux/Features/AssetsApi/AssetsApi";
+import {
+  useDeleteAssetsMutation,
+  useGetAssetsQuery,
+} from "../../../Redux/Features/AssetsApi/AssetsApi";
+import Swal from "sweetalert2";
 const ManageItems = () => {
-  const { data: allAssets } = useGetAssetsQuery(undefined);
+  const { data: allAssets, refetch } = useGetAssetsQuery(undefined);
   console.log(allAssets);
+  const [deleteAssets] = useDeleteAssetsMutation();
+
+  const handleDelete = (_id) => {
+    Swal.fire({
+      title: "Are you want to delete this assets?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          await deleteAssets(_id);
+          refetch();
+          Swal.fire({
+            title: "Deleted!",
+            text: "Your assets has been deleted.",
+            icon: "success",
+          });
+        } catch (error) {
+          console.error("Error deleting assets:", error);
+        }
+      }
+    });
+  };
+
   return (
     <div className="overflow-x-auto border border-red-500 ms-24 shadow-xl">
       <table className="table">
@@ -58,7 +90,10 @@ const ManageItems = () => {
               </th>
               <th className="text-center">
                 {/* delete */}
-                <button className="btn btn-ghost btn-xs text-[#EE4023] text-4xl">
+                <button
+                  onClick={() => handleDelete(allAsset._id)}
+                  className="btn btn-ghost btn-xs text-[#EE4023] text-4xl"
+                >
                   <MdDeleteSweep></MdDeleteSweep>
                 </button>
               </th>
