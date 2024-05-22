@@ -10,7 +10,7 @@ const Photos = () => {
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
         <Masonry columnsCount={3} gutter="10px">
           {photos?.map((photo) => (
-            <PhotosCard key={photo._id} pattern={photo}></PhotosCard>
+            <PhotosCard key={photo._id} photo={photo}></PhotosCard>
           ))}
         </Masonry>
       </ResponsiveMasonry>

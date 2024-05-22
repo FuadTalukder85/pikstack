@@ -23,14 +23,18 @@ const Navbar = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>Photos</li>
+            <li>
+              <Link to="/photos">Photos</Link>
+            </li>
             <li>
               <Link to="/vector">Vector</Link>
             </li>
             <li>
               <Link to="/pattern">Pattern</Link>
             </li>
-            <li>Illustration</li>
+            <li>
+              <Link to="/illustration">Illustration</Link>
+            </li>
             <li>
               <Link to="/psd">PSD</Link>
             </li>

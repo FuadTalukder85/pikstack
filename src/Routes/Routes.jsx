@@ -15,6 +15,7 @@ import Pattern from "../Component/Card/Pattern/Pattern";
 import Vector from "../Component/Card/Vector/Vector";
 import Psd from "../Component/Card/Psd/Psd";
 import Photos from "../Component/Card/Photos/Photos";
+import Illustration from "../Component/Card/Illustration/Illustration";
 
 export const router = createBrowserRouter([
   {
@@ -45,7 +46,10 @@ export const router = createBrowserRouter([
         path: "/pattern",
         element: <Pattern></Pattern>,
       },
-
+      {
+        path: "/illustration",
+        element: <Illustration></Illustration>,
+      },
       {
         path: "/psd",
         element: <Psd></Psd>,
