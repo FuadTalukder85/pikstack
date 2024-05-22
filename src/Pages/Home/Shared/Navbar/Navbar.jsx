@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../../../image/logo/pikstack-logo.png";
-import { IoSearch } from "react-icons/io5";
+// import { IoSearch } from "react-icons/io5";
 import { useContext } from "react";
 import { AuthContext } from "../../../../Providers/AuthProvider";
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className="bg-[#271f23] text-white">
+    <div className="bg-[#000000] bg-opacity-20 text-white z-10 relative">
       <div className="navbar justify-between ps-28 pe-28">
         {/*  */}
         <div className="flex-none w-40">
@@ -88,7 +88,7 @@ const Navbar = () => {
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                <span className="badge badge-sm indicator-item">8</span>
+                <span className="badge badge-sm indicator-item">88</span>
               </div>
             </div>
             <div
@@ -137,16 +137,18 @@ const Navbar = () => {
         </div>
       </div>
       {/* search */}
-      <div className="form-control flex items-center z-10 lg:w-full pb-5">
-        <input
-          type="text"
-          placeholder="Find your Images. Search by keywords..."
-          className="input border lg:w-full md:w-auto bg-white text-black ps-28 pe-28"
-        />
-        <button className="absolute right-0  me-28 p-3 ps-7 pr-7 text-2xl bg-[#EE4023]">
-          <IoSearch />
+      {/* <div className="form-control z-10 pb-5 lg:w-[900px] mx-auto relative flex items-center justify-center">
+        <div>
+          <input
+            type="text"
+            placeholder="Find your Images. Search by keywords..."
+            className="input lg:w-[900px] md:w-auto bg-white text-black px-28 py-6 rounded-sm"
+          />
+        </div>
+        <button className="absolute right-0 p-2 px-3 font-semibold text-lg text-white bg-[#EE4023] mr-1 rounded-sm flex items-center justify-between gap-3">
+          <IoSearch /> Search
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
