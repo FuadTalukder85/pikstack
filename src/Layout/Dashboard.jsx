@@ -35,8 +35,11 @@ const Dashboard = () => {
             <li className="bg-[#EE4023]"></li>
 
             {/* Sidebar content here */}
-            <li className="mt-11">
-              <a className="text-3xl">Dashboard</a>
+            <li className="mt-11 text-3xl">
+              <Link to="/dashboard/admin">
+                <FaHome className=""></FaHome>
+                Dashboard
+              </Link>
             </li>
             <li>
               <Link to="admin">
