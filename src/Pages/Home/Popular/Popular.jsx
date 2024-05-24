@@ -12,7 +12,7 @@ const Popular = () => {
     <div className="flex justify-center">
       <div className="mt-16">
         <h1 className="text-4xl font-bold text-center text-[#271F23]">
-          Popular Vector Graphics and Photos
+          Popular Vector Graphics and PHD
         </h1>
         <div className="flex gap-5 mt-16">
           <img className="hover:opacity-85 transition-all" src={img1} />
