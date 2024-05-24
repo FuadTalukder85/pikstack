@@ -6,10 +6,28 @@ import { Link } from "react-router-dom";
 import { useGetAssetsQuery } from "../../../Redux/Features/AssetsApi/AssetsApi";
 const Category = () => {
   const { data } = useGetAssetsQuery(undefined);
-  console.log(data);
+
+  // total image
   const totalImg = data?.filter((img) => img.category == "Photo");
   const totalImgLength = totalImg?.length;
-  console.log("total img =>", totalImgLength);
+
+  // total vertor
+  const totalVector = data?.filter((vector) => vector.category == "Vector");
+  const totalVectorLength = totalVector?.length;
+
+  // total pattern
+  const totalPattern = data?.filter((pattern) => pattern.category == "Pattern");
+  const totalPatternLength = totalPattern?.length;
+
+  // total Illustrator
+  const totalIllustration = data?.filter(
+    (illustration) => illustration.category == "Illustrator"
+  );
+  const totalIllustrationLength = totalIllustration?.length;
+
+  // total psd
+  const totalPsd = data?.filter((psd) => psd.category == "PSD");
+  const totalPsdLength = totalPsd?.length;
 
   return (
     <div>
@@ -18,70 +36,105 @@ const Category = () => {
       </h1>
       <div className="grid grid-cols-5 justify-items-center gap-10 mt-11 ps-28 pe-28">
         {/* photos */}
-        <div className="card w-76 shadow-xl">
+        <div className="card w-76 overflow-hidden rounded-lg">
           <div className="relative">
             <Link to="/photos">
               <figure>
-                <img src={photo} alt="Shoes" />
+                <img
+                  className="hover:scale-105 transition-all"
+                  src={photo}
+                  alt="Shoes"
+                />
               </figure>
             </Link>
           </div>
           <div className="absolute top-0 right-0">
-            <div className="card-actions flex items-center justify-start bg-[#271f23a1] px-3 py-1 rounded-b-s">
+            <div className="card-actions flex items-center justify-start bg-[#271f23a1] px-3 py-1 rounded-tr-lg">
               <h3 className="text-xl text-white">{totalImgLength}</h3>
               <h3 className="text-xl text-white">photos</h3>
             </div>
           </div>
         </div>
         {/* vector */}
-        <div className="card w-76 bg-[#271F23] shadow-xl">
-          <Link to="/photo">
-            <figure>
-              <img src={vector} alt="Shoes" />
-            </figure>
-          </Link>
-          <div className="p-3">
-            <div className="card-actions justify-start text-white">
-              <h3 className="text-2xl font-bold text-white">Vector</h3>
+        <div className="card w-76 shadow-xl overflow-hidden rounded-lg">
+          <div className="relative">
+            <Link to="/vector">
+              <figure>
+                <img
+                  className="hover:scale-105 transition-all"
+                  src={vector}
+                  alt="Shoes"
+                />
+              </figure>
+            </Link>
+          </div>
+          <div className="absolute top-0 right-0">
+            <div className="card-actions flex items-center justify-start bg-[#271f23a1] px-3 py-1 rounded-tr-lg">
+              <h3 className="text-xl text-white">{totalVectorLength}</h3>
+              <h3 className="text-xl text-white">vector</h3>
             </div>
           </div>
         </div>
+
         {/* pattern */}
-        <div className="card w-76 bg-[#271F23] shadow-xl">
-          <Link to="/photo">
-            <figure>
-              <img src={pattern} alt="Shoes" />
-            </figure>
-          </Link>
-          <div className="p-3">
-            <div className="card-actions justify-start text-white">
-              <h3 className="text-2xl font-bold text-white">Pattern</h3>
+        <div className="card w-76 shadow-xl overflow-hidden rounded-lg">
+          <div className="relative">
+            <Link to="/pattern">
+              <figure>
+                <img
+                  className="hover:scale-105 transition-all"
+                  src={pattern}
+                  alt="Shoes"
+                />
+              </figure>
+            </Link>
+          </div>
+          <div className="absolute top-0 right-0">
+            <div className="card-actions flex items-center justify-start bg-[#271f23a1] px-3 py-1 rounded-tr-lg">
+              <h3 className="text-xl text-white">{totalPatternLength}</h3>
+              <h3 className="text-xl text-white">pattern</h3>
             </div>
           </div>
         </div>
+
         {/* illustration */}
-        <div className="card w-76 bg-[#271F23] shadow-xl">
-          <Link to="/photo">
-            <figure>
-              <img src={illustration} alt="Shoes" />
-            </figure>
-          </Link>
-          <div className="p-3">
-            <div className="card-actions justify-start text-white">
-              <h3 className="text-2xl font-bold text-white">Illustration</h3>
+        <div className="card w-76 shadow-xl overflow-hidden rounded-lg">
+          <div className="relative">
+            <Link to="/illustration">
+              <figure>
+                <img
+                  className="hover:scale-105 transition-all"
+                  src={illustration}
+                  alt="Shoes"
+                />
+              </figure>
+            </Link>
+          </div>
+          <div className="absolute top-0 right-0">
+            <div className="card-actions flex items-center justify-start bg-[#271f23a1] px-3 py-1 rounded-tr-lg">
+              <h3 className="text-xl text-white">{totalIllustrationLength}</h3>
+              <h3 className="text-xl text-white">illustration</h3>
             </div>
           </div>
         </div>
+
         {/* psd */}
-        <div className="card w-76 bg-[#271F23] shadow-xl">
-          <Link to="/photo">
-            <figure>
-              <img src={photo} alt="Shoes" />
-            </figure>
-          </Link>
-          <div className="p-3">
-            <div className="card-actions justify-start text-white">
-              <h3 className="text-2xl font-bold text-white">PSD</h3>
+        <div className="card w-76 shadow-xl overflow-hidden rounded-lg">
+          <div className="relative">
+            <Link to="/psd">
+              <figure>
+                <img
+                  className="hover:scale-105 transition-all"
+                  src={photo}
+                  alt="Shoes"
+                />
+              </figure>
+            </Link>
+          </div>
+          <div className="absolute top-0 right-0">
+            <div className="card-actions flex items-center justify-start bg-[#271f23a1] px-3 py-1 rounded-tr-lg">
+              <h3 className="text-xl text-white">{totalPsdLength}</h3>
+              <h3 className="text-xl text-white">psd</h3>
             </div>
           </div>
         </div>
