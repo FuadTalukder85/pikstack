@@ -12,7 +12,7 @@ const Navbar = () => {
   };
   return (
     <div className="bg-[#000000] bg-opacity-20 text-white z-10 relative">
-      <div className="navbar justify-between px-28">
+      <div className="navbar justify-between px-56">
         {/*  */}
         <div className="flex-none w-40">
           <img src={logo} alt="" />
@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className="flex-none">
           <div>
             <ul className="flex gap-11 font-semibold pr-6">
-              <li>Contributor</li>
+              {/* <li>Contributor</li> */}
               <li>
                 <Link to="/dashboard/admin">Dashboard</Link>
               </li>

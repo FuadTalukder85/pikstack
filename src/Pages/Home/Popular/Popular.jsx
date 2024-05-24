@@ -9,24 +9,22 @@ import img8 from "../../../assets/img/popularImg/vector08.jpg";
 import img9 from "../../../assets/img/popularImg/vector09.jpg";
 const Popular = () => {
   return (
-    <div className="flex justify-center">
-      <div className="mt-16">
-        <h1 className="text-4xl font-bold text-center text-[#271F23]">
-          Popular Vector Graphics and PHD
-        </h1>
-        <div className="flex gap-5 mt-16">
-          <img className="hover:opacity-85 transition-all" src={img1} />
-          <img className="hover:opacity-85 transition-all" src={img2} />
-          <img className="hover:opacity-85 transition-all" src={img3} />
-          <img className="hover:opacity-85 transition-all" src={img4} />
-        </div>
-        <div className="flex gap-5 mt-5 w-full">
-          <img className="hover:opacity-85 transition-all" src={img5} />
-          <img className="hover:opacity-85 transition-all" src={img6} />
-          <img className="hover:opacity-85 transition-all" src={img7} />
-          <img className="hover:opacity-85 transition-all" src={img8} />
-          <img className="hover:opacity-85 transition-all" src={img9} />
-        </div>
+    <div className="mt-16 mx-56">
+      <h1 className="text-4xl font-bold text-center text-[#271F23]">
+        Popular Vector Graphics and PSD
+      </h1>
+      <div className="flex gap-5 mt-16 w-full">
+        <img className="hover:opacity-85 transition-all w-[320px]" src={img1} />
+        <img className="hover:opacity-85 transition-all" src={img2} />
+        <img className="hover:opacity-85 transition-all" src={img3} />
+        <img className="hover:opacity-85 transition-all" src={img4} />
+      </div>
+      <div className="flex gap-5 mt-5">
+        <img className="hover:opacity-85 transition-all" src={img5} />
+        <img className="hover:opacity-85 transition-all" src={img6} />
+        <img className="hover:opacity-85 transition-all w-[255px]" src={img7} />
+        <img className="hover:opacity-85 transition-all" src={img8} />
+        <img className="hover:opacity-85 transition-all" src={img9} />
       </div>
     </div>
   );

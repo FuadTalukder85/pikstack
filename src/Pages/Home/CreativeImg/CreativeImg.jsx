@@ -4,7 +4,7 @@ import img3 from "../../../assets/img/creativeImg/img3.jpg";
 import img4 from "../../../assets/img/creativeImg/img4.jpg";
 const CreativeImg = () => {
   return (
-    <div className="mx-80 grid grid-cols-12 items-center gap-5 mt-16">
+    <div className="mx-56 grid grid-cols-12 items-center gap-5 mt-16">
       <div className="col-span-8">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-7">
