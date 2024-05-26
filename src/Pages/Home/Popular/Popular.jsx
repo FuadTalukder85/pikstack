@@ -29,7 +29,7 @@ const Popular = () => {
         </div>
         <div className="col-span-1 md:col-span-2 h-40 md:h-60">
           <img
-            className="w-full h-full object-cover hover:opacity-85 transition-all"
+            className="w-full h-full hover:opacity-85 transition-all"
             src={img6}
             alt="Image 6"
           />

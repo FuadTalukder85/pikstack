@@ -3,10 +3,10 @@ import "./SignUpBanner.css";
 
 const SignUpBanner = () => {
   return (
-    <div className="bg-img mt-28 flex justify-center p-10">
+    <div className="bg-img mt-10 md:mt-28 flex justify-center p-10">
       <div className="md:flex items-center gap-28 md:mx-28">
         <div>
-          <h1 className="text-5xl font-bold text-center text-white">
+          <h1 className="text-xl md:text-5xl font-bold text-center text-white">
             Create a Free Account
           </h1>
           <p className="text-white text-center text-xl mt-3 w-[400px] mx-auto">
