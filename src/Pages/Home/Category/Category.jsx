@@ -30,11 +30,11 @@ const Category = () => {
   const totalPsdLength = totalPsd?.length;
 
   return (
-    <div className="px-56">
-      <h1 className="text-4xl font-bold text-center text-[#271F23] mt-8">
+    <div className="md:px-56">
+      <h1 className="text-xl md:text-4xl font-bold text-center text-[#271F23] mt-4 md:mt-8">
         Browse by Content Type
       </h1>
-      <div className="grid grid-cols-5 justify-items-center gap-5 mt-11">
+      <div className="grid grid-cols-2 md:grid-cols-5 justify-items-center gap-5 p-5 md:p-0 md:mt-11">
         {/* photos */}
         <div className="card w-76 overflow-hidden rounded-lg">
           <div className="relative">

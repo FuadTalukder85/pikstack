@@ -43,11 +43,7 @@ const Signup = () => {
     <div>
       <div className="hero">
         <div className="hero-content w-full flex-col ">
-          <div className="text-center lg:text-left">
-            {/* <h1 className="text-5xl font-bold text-center text-[#F1696A]">
-              Signup Pikstack...
-            </h1> */}
-          </div>
+          <div className="text-center lg:text-left"></div>
           <div className="card shrink-0 bg-white shadow-xl font-semibold">
             <form
               onSubmit={handleSubmit(onSubmit)}

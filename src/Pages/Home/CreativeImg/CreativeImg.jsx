@@ -4,7 +4,7 @@ import img3 from "../../../assets/img/creativeImg/img3.jpg";
 import img4 from "../../../assets/img/creativeImg/img4.jpg";
 const CreativeImg = () => {
   return (
-    <div className="mx-56 grid grid-cols-12 items-center gap-5 mt-16">
+    <div className="md:mx-56 md:grid grid-cols-12 items-center flex flex-col-reverse md:flex-row gap-5 mt-16 p-4 md:p-0">
       <div className="col-span-8">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-7">
@@ -26,10 +26,10 @@ const CreativeImg = () => {
         </div>
       </div>
       <div className="col-span-4">
-        <h1 className="text-4xl font-bold text-center text-[#271F23]">
+        <h1 className="text-xl md:text-4xl font-bold text-center text-[#271F23]">
           Best creative background image
         </h1>
-        <p className="text-xl font-semibold text-center text-[#271F23] mt-5">
+        <p className="md:text-xl font-semibold text-center text-[#271F23] mt-5">
           Transform your background with our collection of eye-catching images
           Backdrop 890604 images
         </p>

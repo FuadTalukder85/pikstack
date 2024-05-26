@@ -1,18 +1,8 @@
-/* .slider-container {
-  position: relative;
+.hero-banner {
+  background-image: url(../../../image/banner_img/banner-img01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.slider-container:hover {
-  transform: scale(1.03);
-  transition: transform 0.5s ease;
-}
-.slick-next {
-  right: 0px;
-  display: hidden;
-} */
-
-.left-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  left: 25px;
+.color {
+  color: red;
 }

@@ -4,7 +4,7 @@ import "./SignUpBanner.css";
 const SignUpBanner = () => {
   return (
     <div className="bg-img mt-28 flex justify-center p-10">
-      <div className="flex items-center gap-28 mx-28">
+      <div className="md:flex items-center gap-28 md:mx-28">
         <div>
           <h1 className="text-5xl font-bold text-center text-white">
             Create a Free Account

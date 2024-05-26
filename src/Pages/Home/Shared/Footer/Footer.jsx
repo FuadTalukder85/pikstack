@@ -1,7 +1,7 @@
 import logo from "../../../../image/logo/pikstack-logo.png";
 const Footer = () => {
   return (
-    <div className="bg-[#271F23] text-white font-semibold px-56">
+    <div className="bg-[#271F23] text-white font-semibold md:px-56">
       <footer className="footer py-10">
         <nav className="w-40 flex items-center justify-between">
           <img src={logo} alt="" />
