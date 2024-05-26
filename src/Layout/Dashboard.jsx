@@ -7,7 +7,7 @@ import { FaUsersGear } from "react-icons/fa6";
 import { TbLockAccessOff } from "react-icons/tb";
 const Dashboard = () => {
   return (
-    <div className="ps-28 pe-28">
+    <div className="md:px-28">
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
@@ -67,11 +67,6 @@ const Dashboard = () => {
                 <FaUsersGear></FaUsersGear>Manage Users
               </Link>
             </li>
-            {/* <li>
-              <Link to="updateitem">
-                <FaUsersGear></FaUsersGear>updateitem
-              </Link>
-            </li> */}
           </ul>
         </div>
       </div>

@@ -13,8 +13,8 @@ const Psd = () => {
     return () => clearInterval(interval);
   }, [refetch]);
   return (
-    <div className="px-28 mt-28">
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
+    <div className="p-4 md:p-0 md:px-28 md:mt-28">
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 2, 900: 4 }}>
         <Masonry columnsCount={3} gutter="10px">
           {psd?.map((psd) => (
             <PsdCard key={psd._id} psd={psd}></PsdCard>

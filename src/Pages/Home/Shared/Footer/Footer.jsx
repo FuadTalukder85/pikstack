@@ -46,7 +46,7 @@ const Footer = () => {
         </form>
       </footer>
       <hr className="mt-10" />
-      <div className="pb-32 pt-5 md:py-16 text-center">
+      <div className="pb-32 pt-5 md:py-16 text-center font-thin">
         Copyright © 2024 Pikstack Company All rights reserved.
       </div>
     </div>
